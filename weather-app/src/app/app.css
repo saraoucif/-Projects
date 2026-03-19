@@ -9,6 +9,7 @@
 h1 {
   font-size: 2rem;
   margin-bottom: 30px;
+  color: #61b9e4;
 }
 
 .search {
@@ -28,7 +29,7 @@ input {
 
 button {
   padding: 12px 20px;
-  background-color: #3b82f6;
+  background-color: #86c5e7;
   color: white;
   border: none;
   border-radius: 8px;
@@ -37,11 +38,11 @@ button {
 }
 
 button:hover {
-  background-color: #2563eb;
+  background-color: #799eef;
 }
 
 .weather-card {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #b0befd, #6e9cf8);
   color: white;
   border-radius: 16px;
   padding: 30px;

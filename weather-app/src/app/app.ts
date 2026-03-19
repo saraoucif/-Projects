@@ -30,7 +30,9 @@ export class App {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=${this.apiKey}&units=metric`;
 
     this.http.get(url).subscribe({
-      next: (data) => {
+      next: (data: any) => {
+        data.main.temp = Math.round(data.main.temp);
+        data.main.feels_like = Math.round(data.main.feels_like);
         this.weather = data;
         this.loading = false;
         this.cd.detectChanges(); // force Angular to update the view
