@@ -35,10 +35,10 @@ export class App {
         data.main.feels_like = Math.round(data.main.feels_like);
         this.weather = data;
         this.loading = false;
-        this.cd.detectChanges(); // force Angular to update the view
+        this.cd.detectChanges(); 
       },
       error: (err) => {
-        this.error = 'City not found — please try again';
+        this.error = 'City not found please try again';
         this.loading = false;
         this.cd.detectChanges();
       }
